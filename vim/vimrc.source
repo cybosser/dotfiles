@@ -51,6 +51,7 @@ Plugin 'FuzzyFinder'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
+Plugin 'a.vim'
 
 call vundle#end()
 
@@ -93,7 +94,7 @@ nnoremap <leader>d "_d
 
 nnoremap <leader>w <C-w>
 
-nnoremap <leader>h :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+nnoremap <leader>h :A<CR>
 nnoremap <leader>f :FufCoverageFile<CR>
 nnoremap <leader>b :FufBuffer<CR>
 nnoremap <leader>t :TlistToggle<CR>
