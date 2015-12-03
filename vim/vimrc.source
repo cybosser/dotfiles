@@ -94,13 +94,14 @@ nnoremap <leader>d "_d
 
 nnoremap <leader>w <C-w>
 
-nnoremap <leader>h :A<CR>
 nnoremap <leader>f :FufCoverageFile<CR>
 nnoremap <leader>b :FufBuffer<CR>
 nnoremap <leader>t :TlistToggle<CR>
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
-nnoremap <leader>m :Make<CR>
+
+nnoremap <C-h> :A<CR>
+nnoremap <C-m> :Make<CR>
 
 " External .vimrc configuration
 set exrc
