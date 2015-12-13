@@ -14,7 +14,7 @@ syntax on
 set number
 set wildmenu
 set cursorline
-
+set colorcolumn=120
 set laststatus=2
 
 " Tab configuration
