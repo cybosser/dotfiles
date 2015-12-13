@@ -53,6 +53,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'a.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
