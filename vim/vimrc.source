@@ -107,6 +107,7 @@ nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
 
 nnoremap <C-h> :A<CR>
+nnoremap Y y$
 
 " External .vimrc configuration
 set exrc
