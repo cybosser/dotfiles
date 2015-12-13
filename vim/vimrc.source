@@ -29,6 +29,9 @@ set nowritebackup
 
 set hidden
 
+" History configuration
+set history=100
+
 " Vundle configuration
 filetype off
 
