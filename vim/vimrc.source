@@ -93,10 +93,6 @@ let g:airline#extensions#tabline#fnamemod=':t'
 let g:easytags_async=1
 
 " Key mappings
-nnoremap <leader>n :bn<CR>
-nnoremap <leader>p :bp<CR>
-nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
-
 nnoremap <leader>d "_d
 
 nnoremap <leader>w <C-w>
