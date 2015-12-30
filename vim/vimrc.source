@@ -103,8 +103,12 @@ nnoremap <leader>w <C-w>
 
 nnoremap <leader>f :FufCoverageFile<CR>
 nnoremap <leader>b :FufBuffer<CR>
-nnoremap <leader>t :TlistToggle<CR>
+
 nnoremap <leader>g :YcmCompleter GoTo<CR>
+nnoremap <leader>v :YcmCompleter GetType<CR>
+
+nnoremap <leader>t :TlistToggle<CR>
+
 nnoremap <leader>e :NERDTreeToggle<CR>
 
 nnoremap <C-h> :A<CR>
