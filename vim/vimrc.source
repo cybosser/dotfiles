@@ -1,12 +1,12 @@
 set nocompatible
 
-" Search configuration
+" Search
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 
-" UI configuration
+" UI
 syntax on
 
 set number
@@ -15,22 +15,23 @@ set cursorline
 set colorcolumn=120
 set laststatus=2
 
-" Tab configuration
+" Tabs
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-" Backup and swap configuration
+" Backup and swap
 set noswapfile
 set nobackup
 set nowritebackup
 
+" Buffers
 set hidden
 
-" History configuration
+" History
 set history=100
 
-" Vundle configuration
+" Plugins
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -59,30 +60,31 @@ call vundle#end()
 
 filetype plugin indent on
 
+" Colour scheme
 set background=dark
 colorscheme solarized
 
-" NERDtree configuration
+" NERDtree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
-" FuzzyFinder configuration
+" FuzzyFinder
 let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|pyc)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
 
-" YouCompleteMe configuration
+" YouCompleteMe
 let g:ycm_show_diagnostics_ui=0
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_confirm_extra_conf=0
 
-" VimAirline configuration
+" VimAirline
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=':t'
 
-" EasyTags configuration
+" EasyTags
 let g:easytags_async=1
 
-" Key mappings
+" Mappings
 nnoremap <leader>d "_d
 
 nnoremap <leader>w <C-w>
@@ -102,6 +104,6 @@ nnoremap <C-n> :noh<CR>
 
 nnoremap Y y$
 
-" External .vimrc configuration
+" External .vimrc
 set exrc
 set secure
