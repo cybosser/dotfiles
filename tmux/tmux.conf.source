@@ -1,5 +1,7 @@
 source /usr/share/tmux/powerline.conf
 
+set -g default-terminal "screen-256color"
+
 set-option -g base-index 1
 
 set -g prefix 'C-\'
