@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="agnoster"
 
-plugins=(fabric git tmuxinator virtualenv)
+plugins=(fabric git tmuxinator vi-mode virtualenv)
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
