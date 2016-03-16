@@ -20,3 +20,5 @@ create_symlink $location/vim/vimrc.source ~/.vimrc
 
 create_symlink $location/tmux/tmux.conf.source ~/.tmux.conf
 
+create_symlink $location/zsh/zshrc.source ~/.zshrc
+
