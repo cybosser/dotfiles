@@ -11,10 +11,12 @@ function create_symlink {
 	fi
 }
 
-create_symlink git/gitconfig.source ~/.gitconfig
-create_symlink git/gitignore.source ~/.gitignore
+location=$(dirname $0)
 
-create_symlink vim/vimrc.source ~/.vimrc
+create_symlink $location/git/gitconfig.source ~/.gitconfig
+create_symlink $location/git/gitignore.source ~/.gitignore
 
-create_symlink tmux/tmux.conf.source ~/.tmux.conf
+create_symlink $location/vim/vimrc.source ~/.vimrc
+
+create_symlink $location/tmux/tmux.conf.source ~/.tmux.conf
 
