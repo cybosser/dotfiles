@@ -7,6 +7,7 @@ My vim, git, tmux and etc configs.
 ### Prerequisites
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+* [Powerline fonts](https://github.com/powerline/fonts)
 
 ### Symlinks installation
 
