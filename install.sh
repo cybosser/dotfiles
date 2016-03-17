@@ -1,8 +1,8 @@
 #!/bin/sh
 
 function create_symlink {
-	source=$1
-	target=$2
+	local source=$1
+	local target=$2
 
 	if [ -f $target ]; then
 		echo "File $target already exists. Skipping..."
