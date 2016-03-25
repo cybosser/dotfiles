@@ -100,7 +100,9 @@ nnoremap <leader>t :TlistToggle<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
 
 nnoremap <C-h> :A<CR>
+
 nnoremap <C-n> :noh<CR>
+nnoremap <C-p> :set paste!<CR>
 
 nnoremap Y y$
 
