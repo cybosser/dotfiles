@@ -60,6 +60,11 @@ call vundle#end()
 
 filetype plugin indent on
 
+" python
+if has("autocmd")
+    autocmd FileType python setlocal expandtab
+endif
+
 " Colour scheme
 set background=dark
 colorscheme solarized
