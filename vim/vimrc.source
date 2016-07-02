@@ -67,6 +67,11 @@ if has("autocmd")
     autocmd FileType python setlocal expandtab
 endif
 
+" vim-better-whitespace
+if has("autocmd")
+	autocmd BufWritePre * StripWhitespace
+endif
+
 " Colour scheme
 set background=dark
 colorscheme solarized
