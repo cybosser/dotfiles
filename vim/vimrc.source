@@ -68,14 +68,19 @@ if has("autocmd")
     autocmd FileType python setlocal expandtab
 endif
 
+" Colour scheme
+set background=dark
+colorscheme solarized
+
 " vim-better-whitespace
 if has("autocmd")
 	autocmd BufWritePre * StripWhitespace
 endif
 
-" Colour scheme
-set background=dark
-colorscheme solarized
+" vim-flake8
+if has("autocmd")
+	autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
+endif
 
 " NERDtree
 let NERDTreeIgnore=['\.pyc$', '\~$']
