@@ -38,13 +38,13 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'FuzzyFinder'
 Plugin 'L9'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'a.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'camelcasemotion'
+Plugin 'junegunn/fzf'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'nvie/vim-flake8'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -79,9 +79,6 @@ endif
 " NERDtree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
-" FuzzyFinder
-let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|pyc)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-
 " YouCompleteMe
 let g:ycm_show_diagnostics_ui=0
 let g:ycm_autoclose_preview_window_after_completion=1
@@ -101,9 +98,7 @@ nnoremap <leader>d "_d
 
 nnoremap <leader>w <C-w>
 
-nnoremap <leader>f :FufCoverageFile<CR>
-nnoremap <leader>b :FufBuffer<CR>
-nnoremap <leader>r :FufRenewCache<CR>
+nnoremap <leader>f :FZF<CR>
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>v :YcmCompleter GetType<CR>
