@@ -10,5 +10,6 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 
-DEFAULT_USER=$USER
+export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 
+DEFAULT_USER=$USER
