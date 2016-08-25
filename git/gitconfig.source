@@ -19,3 +19,5 @@
 	autosetuprebase = always
 [rebase]
 	stat = true
+[merge]
+	tool = meld
