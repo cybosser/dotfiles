@@ -77,6 +77,11 @@ if has("autocmd")
 	autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
 endif
 
+" YAML files
+if has("autocmd")
+	autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
+endif
+
 " NERDtree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
