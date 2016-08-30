@@ -4,6 +4,8 @@ ZSH_THEME="agnoster"
 
 plugins=(fabric git tmuxinator vi-mode virtualenv golang)
 
+alias gre='git review $(git rev-parse --abbrev-ref HEAD)'
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
