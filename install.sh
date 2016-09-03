@@ -17,6 +17,7 @@ create_symlink $location/git/gitconfig.source ~/.gitconfig
 create_symlink $location/git/gitignore.source ~/.gitignore
 
 create_symlink $location/vim/vimrc.source ~/.vimrc
+vim +PluginInstall +quitall
 
 create_symlink $location/tmux/tmux.conf.source ~/.tmux.conf
 
