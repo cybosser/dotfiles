@@ -118,6 +118,8 @@ nnoremap <leader>v :YcmCompleter GetType<CR>
 
 nnoremap <leader>e :NERDTreeToggle<CR>
 
+nnoremap <leader>s :Ack -w <C-r><C-w><CR>
+
 nnoremap <C-h> :A<CR>
 
 nnoremap <C-n> :noh<CR>
