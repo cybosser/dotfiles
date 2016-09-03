@@ -80,7 +80,7 @@ endif
 
 " YAML files
 if has("autocmd")
-	autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 endif
 
 " NERDtree
