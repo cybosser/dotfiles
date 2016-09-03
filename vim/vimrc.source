@@ -74,6 +74,11 @@ if has("autocmd")
 	autocmd BufWritePre * StripWhitespace
 endif
 
+" ack
+if executable('ag')
+	let g:ackprg = 'ag --vimgrep'
+endif
+
 " vim-flake8
 if has("autocmd")
 	autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
