@@ -10,19 +10,15 @@ My vim, git, tmux and etc configs.
 * [Powerline fonts](https://github.com/powerline/fonts)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-### Symlinks installation
+### Symlinks and vim plugins installation
 
 To install all configs just run install.sh:
 ```
 ./install.sh
 ```
-The script will create all required symlinks. Don't be afraid that the script will overwrite your existing configs, it won't do that.
+The script will create all required symlinks if they don't exist and install vim plugins.
 
-### Vim plugins installation
+### tmux plugins installation
 
-To install vim plugins lunch vim and run `:PluginInstall`.
-
-### Tmux plugins installation
-
-To install tmux plugins lunch tmux and press `prefix + I`.
+Unfortunately I couldn't find a way to automate tmux plugins installation so you have to install them manually. To do that lunch tmux and press `prefix + I`.
 
