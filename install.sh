@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 function create_symlink {
 	local source=$1
 	local target=$2
