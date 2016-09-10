@@ -15,13 +15,13 @@ function create_symlink {
 
 location=$(dirname $0)
 
-create_symlink $location/git/gitconfig.source ~/.gitconfig
-create_symlink $location/git/gitignore.source ~/.gitignore
+create_symlink $location/git/gitconfig ~/.gitconfig
+create_symlink $location/git/gitignore ~/.gitignore
 
-create_symlink $location/vim/vimrc.source ~/.vimrc
+create_symlink $location/vim/vimrc ~/.vimrc
 vim +PluginInstall +quitall
 
-create_symlink $location/tmux/tmux.conf.source ~/.tmux.conf
+create_symlink $location/tmux/tmux.conf ~/.tmux.conf
 
-create_symlink $location/zsh/zshrc.source ~/.zshrc
+create_symlink $location/zsh/zshrc ~/.zshrc
 
