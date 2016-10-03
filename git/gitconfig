@@ -1,15 +1,5 @@
 [color]
 	ui = auto
-[alias]
-	st = status
-	su = submodule update
-	sp = stash pop
-	co = checkout
-	ap = add --patch
-	aa = add --all
-	ci = commit
-	di = diff
-	ds = diff --staged
 [push]
 	default = current
 [core]
