@@ -47,7 +47,6 @@ Plugin 'b4winckler/vim-angry'
 Plugin 'camelcasemotion'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/fzf'
-Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'nvie/vim-flake8'
@@ -79,12 +78,6 @@ endif
 
 " vim-flake8
 autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
-
-" Rainbow Parentheses
-autocmd VimEnter * RainbowParenthesesToggle
-autocmd Syntax * RainbowParenthesesLoadRound
-autocmd Syntax * RainbowParenthesesLoadSquare
-autocmd Syntax * RainbowParenthesesLoadBraces
 
 " YAML files
 autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
