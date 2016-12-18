@@ -47,7 +47,6 @@ Plugin 'b4winckler/vim-angry'
 Plugin 'camelcasemotion'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/fzf'
-Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'nvie/vim-flake8'
@@ -60,8 +59,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'xolox/vim-easytags'
-Plugin 'xolox/vim-misc'
 
 call vundle#end()
 
@@ -81,12 +78,6 @@ endif
 
 " vim-flake8
 autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
-
-" Rainbow Parentheses
-autocmd VimEnter * RainbowParenthesesToggle
-autocmd Syntax * RainbowParenthesesLoadRound
-autocmd Syntax * RainbowParenthesesLoadSquare
-autocmd Syntax * RainbowParenthesesLoadBraces
 
 " YAML files
 autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
@@ -117,7 +108,7 @@ nnoremap <leader>w <C-w>
 nnoremap <leader>f :FZF<CR>
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
-nnoremap <leader>v :YcmCompleter GetType<CR>
+nnoremap <leader>t :YcmCompleter GetType<CR>
 
 nnoremap <leader>e :NERDTreeToggle<CR>
 
