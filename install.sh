@@ -6,7 +6,7 @@ function create_symlink {
 	local source=$1
 	local target=$2
 
-	if [ -f $target ]; then
+	if [ -e $target ]; then
 		echo "File $target already exists. Skipping..."
 	else
 		ln -s $(realpath $source) $(realpath $target)
