@@ -23,6 +23,9 @@ create_symlink $location/vim/ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
 
 vim +PluginInstall +quitall
 
+create_symlink ~/.vim/bundle/fzf ~/.fzf
+~/.fzf/install --all
+
 create_symlink $location/tmux/tmux.conf ~/.tmux.conf
 
 create_symlink $location/zsh/zshrc ~/.zshrc
