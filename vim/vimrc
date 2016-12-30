@@ -100,18 +100,18 @@ let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=':t'
 
-" EasyTags
-let g:easytags_async=1
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<leader>r"
 
 " Mappings
 nnoremap <leader>d "_d
 
 nnoremap <leader>w <C-w>
 
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>t :BTags<CR>
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
-nnoremap <leader>t :TagbarToggle<CR>
 
 nnoremap <leader>e :NERDTreeToggle<CR>
 
