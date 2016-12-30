@@ -111,7 +111,7 @@ nnoremap <leader>w <C-w>
 nnoremap <leader>f :FZF<CR>
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
-nnoremap <leader>t :YcmCompleter GetType<CR>
+nnoremap <leader>t :TagbarToggle<CR>
 
 nnoremap <leader>e :NERDTreeToggle<CR>
 
