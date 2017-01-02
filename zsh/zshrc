@@ -10,6 +10,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
+export ACKRC=".ackrc"
 export EDITOR='vim'
 
 export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
