@@ -123,6 +123,8 @@ nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>r :NERDTreeFind<CR>
 
+nnoremap <leader>c :Make<CR>
+
 nnoremap <leader>s :Ack <C-r><C-w><CR>
 
 nnoremap <C-h> :A<CR>
