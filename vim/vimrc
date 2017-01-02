@@ -108,20 +108,26 @@ nnoremap <leader>d "_d
 
 nnoremap <leader>w <C-w>
 
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
+nnoremap Y y$
+
+nnoremap <leader>b :History<CR>
+nnoremap <leader>c :History:<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>t :BTags<CR>
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 
 nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>r :NERDTreeFind<CR>
 
-nnoremap <leader>s :Ack -w <C-r><C-w><CR>
+nnoremap <leader>s :Ack <C-r><C-w><CR>
 
 nnoremap <C-h> :A<CR>
 
 nnoremap <C-n> :noh<CR>
-
-nnoremap Y y$
 
 " External .vimrc
 set exrc
