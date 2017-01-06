@@ -80,12 +80,6 @@ if executable('ag')
 	let g:ackprg = 'ag --vimgrep'
 endif
 
-" vim-flake8
-autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
-
-" YAML files
-autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-
 " NERDtree
 let NERDTreeIgnore=['\.class', '\.pyc$', '\~$']
 
@@ -101,8 +95,14 @@ let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=':t'
 
-" UltiSnips
-let g:UltiSnipsExpandTrigger="<leader>r"
+" Python files
+autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
+
+" YAML files
+autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
+" Java files
+autocmd FileType java setlocal expandtab
 
 " Mappings
 nnoremap <leader>d "_d
