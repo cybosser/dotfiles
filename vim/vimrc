@@ -47,11 +47,13 @@ Plugin 'b4winckler/vim-angry'
 Plugin 'camelcasemotion'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'nvie/vim-flake8'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-abolish.git'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
@@ -59,6 +61,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
 
 call vundle#end()
 
@@ -76,14 +80,8 @@ if executable('ag')
 	let g:ackprg = 'ag --vimgrep'
 endif
 
-" vim-flake8
-autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
-
-" YAML files
-autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-
 " NERDtree
-let NERDTreeIgnore=['\.pyc$', '\~$']
+let NERDTreeIgnore=['\.class', '\.pyc$', '\~$']
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
@@ -97,28 +95,42 @@ let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=':t'
 
-" EasyTags
-let g:easytags_async=1
+" Python files
+autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
+
+" YAML files
+autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
+" Java files
+autocmd FileType java setlocal expandtab
 
 " Mappings
 nnoremap <leader>d "_d
 
 nnoremap <leader>w <C-w>
 
-nnoremap <leader>f :FZF<CR>
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
+nnoremap Y y$
+
+nnoremap <leader>b :History<CR>
+nnoremap <leader>c :History:<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>t :BTags<CR>
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
-nnoremap <leader>t :YcmCompleter GetType<CR>
 
 nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>r :NERDTreeFind<CR>
 
-nnoremap <leader>s :Ack -w <C-r><C-w><CR>
+nnoremap <leader>c :Make<CR>
+
+nnoremap <leader>s :Ack <C-r><C-w><CR>
 
 nnoremap <C-h> :A<CR>
 
 nnoremap <C-n> :noh<CR>
-
-nnoremap Y y$
 
 " External .vimrc
 set exrc

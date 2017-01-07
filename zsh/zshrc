@@ -11,8 +11,10 @@ export PATH=$HOME/bin:/usr/local/bin:$GOPATH/bin:/usr/local/go/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
+export ACKRC=".ackrc"
 export EDITOR='vim'
-
 export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 
 DEFAULT_USER=$USER
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

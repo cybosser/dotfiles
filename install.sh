@@ -6,7 +6,7 @@ function create_symlink {
 	local source=$1
 	local target=$2
 
-	if [ -f $target ]; then
+	if [ -e $target ]; then
 		echo "File $target already exists. Skipping..."
 	else
 		ln -s $(realpath $source) $(realpath $target)
@@ -22,6 +22,9 @@ create_symlink $location/vim/vimrc ~/.vimrc
 create_symlink $location/vim/ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
 
 vim +PluginInstall +quitall
+
+create_symlink ~/.vim/bundle/fzf ~/.fzf
+~/.fzf/install --all
 
 create_symlink $location/tmux/tmux.conf ~/.tmux.conf
 
