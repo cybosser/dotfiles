@@ -1,15 +1,16 @@
-[color]
-	ui = auto
-[push]
-	default = current
-[core]
-	editor = vim
-	pager = less -x1,5
 [branch]
 	autosetuprebase = always
-[rebase]
-	stat = true
-[merge]
-	tool = meld
+[color]
+	ui = auto
+[core]
+	editor = vim
+	excludesfile = /home/cybosser/.gitignore
+	pager = less -x1,5
 [gitreview]
 	remote = origin
+[merge]
+	tool = meld
+[push]
+	default = current
+[rebase]
+	stat = true
