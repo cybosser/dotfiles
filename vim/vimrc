@@ -44,7 +44,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'a.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'b4winckler/vim-angry'
-Plugin 'camelcasemotion'
+Plugin 'bkad/CamelCaseMotion'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
@@ -94,6 +94,9 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=':t'
+
+" CamelCaseMotion
+call camelcasemotion#CreateMotionMappings(',')
 
 " Python files
 autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
