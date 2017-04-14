@@ -80,6 +80,9 @@ if executable('rg')
     let g:ackprg = 'rg --vimgrep --no-heading'
 endif
 
+" vim-commentary
+autocmd FileType cpp setlocal commentstring=//\ %s
+
 " NERDtree
 let NERDTreeIgnore=['\.class', '\.pyc$', '\~$']
 
