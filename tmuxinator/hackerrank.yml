@@ -1,0 +1,7 @@
+# ~/.tmuxinator/hackerrank.yml
+
+name: hackerrank
+root: ~/projects/hackerrank
+
+windows:
+  - editor: vim
