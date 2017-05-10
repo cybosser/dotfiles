@@ -99,6 +99,9 @@ let g:airline#extensions#tabline#fnamemod=':t'
 " CamelCaseMotion
 call camelcasemotion#CreateMotionMappings(',')
 
+" commentary.vim
+autocmd FileType cpp setlocal commentstring=//\ %s
+
 " Python files
 autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
 
