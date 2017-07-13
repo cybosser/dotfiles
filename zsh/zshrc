@@ -17,3 +17,4 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 DEFAULT_USER=$USER
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.zshrc.user ] && source ~/.zshrc.user
