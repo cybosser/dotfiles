@@ -36,6 +36,9 @@ vim +PluginInstall +quitall
 
 ~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
 
+create_symlink $location/tern/tern-config ~/.tern-config
+
+# fzf
 create_symlink ~/.vim/bundle/fzf ~/.fzf
 ~/.fzf/install --all
 
