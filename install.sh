@@ -34,7 +34,7 @@ create_symlink $location/vim/ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
 
 vim +PluginInstall +quitall
 
-~/.vim/bundle/YouCompleteMe/install.py --clang-completer
+~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
 
 create_symlink ~/.vim/bundle/fzf ~/.fzf
 ~/.fzf/install --all
