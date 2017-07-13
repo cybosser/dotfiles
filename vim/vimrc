@@ -117,9 +117,7 @@ nnoremap <leader>d "_d
 nnoremap <leader>x "_x
 
 nnoremap <leader>w <C-w>
-
-nnoremap & :&&<CR>
-xnoremap & :&&<CR>
+nnoremap <leader>q :q<CR>
 
 nnoremap Y y$
 
@@ -133,8 +131,6 @@ nnoremap <leader>gl :Gpull<CR>
 
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>r :NERDTreeFind<CR>
-
-nnoremap <leader>b :Make<CR>
 
 nnoremap <leader>s :Ack -w <C-r><C-w><CR>
 
