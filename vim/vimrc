@@ -119,6 +119,8 @@ nnoremap <leader>x "_x
 nnoremap <leader>w <C-w>
 nnoremap <leader>q :q<CR>
 
+nnoremap <leader>b :bp\|bd #<CR>
+
 nnoremap Y y$
 
 nnoremap <leader>c :History:<CR>
