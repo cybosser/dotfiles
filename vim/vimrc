@@ -118,8 +118,8 @@ nnoremap <leader>w <C-w>
 
 nnoremap <leader>s :noh<CR>
 
-nnoremap <leader>q :q<CR>
-nnoremap <leader>v :bp\|bd #<CR>
+nnoremap <leader>c :q<CR>
+nnoremap <leader>x :bp\|bd #<CR>
 
 nnoremap Y y$
 
