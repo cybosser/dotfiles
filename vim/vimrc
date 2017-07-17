@@ -108,40 +108,37 @@ autocmd FileType cpp setlocal commentstring=//\ %s
 autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
 
 " YAML files
-autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-
-" Java files
-autocmd FileType java setlocal expandtab
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " Mappings
 nnoremap <leader>d "_d
 nnoremap <leader>x "_x
 
 nnoremap <leader>w <C-w>
-nnoremap <leader>q :q<CR>
 
-nnoremap <leader>b :bp\|bd #<CR>
+nnoremap <leader>s :noh<CR>
+
+nnoremap <leader>q :q<CR>
+nnoremap <leader>v :bp\|bd #<CR>
 
 nnoremap Y y$
 
-nnoremap <leader>c :History:<CR>
+nnoremap <C-h> :History:<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>t :BTags<CR>
+nnoremap <leader>b :Buffers<CR>
 
 nnoremap <leader>gs :Gst<CR>
+nnoremap <leader>gb :Gbl<CR>
 nnoremap <leader>gp :Gpush<CR>
 nnoremap <leader>gl :Gpull<CR>
 
-nnoremap <leader>e :NERDTreeToggle<CR>
-nnoremap <leader>r :NERDTreeFind<CR>
+nnoremap <leader>et :NERDTreeToggle<CR>
+nnoremap <leader>ef :NERDTreeFind<CR>
 
-nnoremap <leader>s :Ack -w <C-r><C-w><CR>
+nnoremap <leader>a :Ack -w <C-r><C-w><CR>
 
 nnoremap <C-j> :YcmCompleter GoTo<CR>
-
-nnoremap <C-h> :A<CR>
-
-nnoremap <C-n> :noh<CR>
 
 " External .vimrc
 set exrc
