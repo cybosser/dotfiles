@@ -65,6 +65,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 
@@ -105,6 +106,18 @@ call camelcasemotion#CreateMotionMappings(',')
 
 " commentary.vim
 autocmd FileType cpp setlocal commentstring=//\ %s
+
+" syntactic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Python files
 autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
