@@ -9,7 +9,7 @@
 [gitreview]
 	remote = origin
 [merge]
-	tool = meld
+	tool = vimdiff
 [push]
 	default = current
 [rebase]

@@ -53,8 +53,6 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'nvie/vim-flake8'
-Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-abolish.git'
@@ -87,7 +85,7 @@ endif
 autocmd FileType cpp setlocal commentstring=//\ %s
 
 " NERDtree
-let NERDTreeIgnore=['\.class', '\.pyc$', '\~$']
+let NERDTreeIgnore=['\.class$', '\.pyc$', '\~$']
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
@@ -119,14 +117,8 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 
-" Python files
-autocmd FileType python map <buffer> <leader>c :call Flake8()<CR>
-
 " YAML files
 autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
-
-" TypeScript files
-autocmd FileType typescript nnoremap <C-j> YcmCompleter GoToDefinition<CR>
 
 " Mappings
 nnoremap <leader>d "_d
@@ -156,7 +148,13 @@ nnoremap <leader>ef :NERDTreeFind<CR>
 
 nnoremap <leader>a :Ack -w <C-r><C-w><CR>
 
-nnoremap <C-j> :YcmCompleter GoTo<CR>
+nnoremap <C-j> :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>r :YcmRestartServer<CR>
+
+nnoremap <leader>z :SyntasticReset<CR>
+
+nnoremap <C-y>c :!yarn compile<CR>
+nnoremap <C-y>l :!yarn lint<CR>
 
 " External .vimrc
 set exrc
